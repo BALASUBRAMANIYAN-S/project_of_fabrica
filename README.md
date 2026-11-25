@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fabrica: Digital Agency Landing Page
+
+A modern, responsive landing page for a digital agency, built with Next.js. It presents the agency's services, selected projects and client testimonials.
+
+## Sections
+
+- **Hero**: headline and call to action
+- **Services**: Branding and Identity, Social Media Marketing, Web Design and Development, SEO Optimization, Mobile App Development
+- **Projects**: project cards
+- **Testimonials**: client feedback and satisfaction stats
+- **Navbar and Footer**
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) (App Router) + React 19
+- Tailwind CSS 4
+- PrimeReact (UI components)
+- React Icons
 
 ## Getting Started
 
-First, run the development server:
+**Prerequisites:** Node.js 18.18+ and npm
 
 ```bash
+git clone https://github.com/BALASUBRAMANIYAN-S/project_of_fabrica.git
+cd project_of_fabrica
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Start the dev server (Turbopack) |
+| `npm run build` | Create a production build |
+| `npm start` | Run the production build |
+| `npm run lint` | Run ESLint |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── Home/            # Hero, Main, Services, Projects, Testimonials
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+└── Components/
+    ├── Common/          # HomeCard, ProjectCard
+    └── Pages/           # Navbar, Footer
+public/                  # Hero and project images (AVIF), logos
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way is [Vercel](https://vercel.com/new): import the repo and deploy.
